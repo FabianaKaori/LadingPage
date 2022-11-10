@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+    --background-gray: #202225;
+    --purple: #8257e6;
+}
+
+* {
+    margin: 0; /* zerar margem */
+    padding: 0; /* zerar propriedade utilizada para definir o distanciamento interno entre o elemento e a borda */
+    box-sizing: border-box; /*  faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura */
+    font-family: 'Poppins', sans-serif; /* import da fonte que puxamos no começo do codigo */
+}
+
+html{
+     scroll-behavior: smooth; /* animação da linha abaixo do menu */
+}
+
+body
+{
+    background-color: var(--background-gray) ;
+    color: white;
+    /* overflow: hidden; */
+}
+
+nav {
+    position: fixed;/* */
+    top: 0;
+    background: linear-gradient(#35363A, var(--background-gray));
+    border-bottom: 1px solid var(--purple);
+
+    width: 100%;
+}
+
+nav ul{
+    list-style: none; /*tira os marcadores da lista */
+    gap: 2rem; /* da um pequeno espaço entre os componentes da lista */
+    display: flex; /* fez com que a lista ficasse horizontal */
+
+    align-items: center;
+    justify-content: flex-end;
+    height: 5em;
+    padding-right: 30px;
+ }
+
+nav ul li a{
+    text-decoration: none;
+    align-content: center;
+    color: white;
+
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid var(--purple);
+    flex: 1;
+    padding: 0.4rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+/* ------------------------------------- Home ----------------------------------------------- */
+
+.bodyLading{
+    padding-top: 10em;
+}
+
+section{
+    min-height: 80vh;
+    margin: 0 2em;
+
+}
+
+.bodyHome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.groupHome{
+    position: relative;
+}
+
+.nameHome{
+    font-family: 'Satisfy', cursive;
+    font-size: 8em;
+}
+
+.imageHome{
+    max-width: 500px;
+    max-height: 500px;    
+    width: auto;
+    height: auto;
+
+    border-radius: 50% 20% / 10% 40%;
+    background-color: aqua;
+    margin: 50px;
+    
+}
+
+/* -------------------------------------- Imagem Animação Home ---------------------------------------------- */
+.shape img{
+    position: absolute;
+    width: 100%;
+    z-index: -9;
+}
+
+.shape .shape1 {
+    right: 10em;
+    top: -50px;
+    width: 400px;
+    opacity: .5;
+    transform-origin: center;
+    animation: shape linear 10s infinite reverse;
+}
+
+.shape .shape2 {
+    left: 300px;
+    top: 10em;
+    width: 150px;
+    opacity: 0.5;
+    transform-origin: center;
+    animation: shape linear 20s infinite reverse;
+}
+
+@keyframes shape {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.shape .shape3 {
+    top: 0px;
+    left: 0px;
+    width: 80px;
+    opacity: 0.4;
+    transform-origin: center;
+    animation: shape3 linear 15s infinite;
+    transform: translate(-200px, -100px) rotate(0deg);
+}
+
+@keyframes shape3{
+    100%{
+        transform: translate(1300px, 600px) rotate(360deg);
+    }
+}
+
+.shape .shape4 {
+    bottom: 100px;
+    left: 0px;
+    width: 100px;
+    opacity: 0.4;
+    transform-origin: center;
+    animation: shape4 linear 15s infinite;
+    transform: translate(500px, 80px) rotate(0deg);
+}
+
+@keyframes shape4{
+    100%{
+        transform: translate(1200px, -800px) rotate(360deg);
+    }
+}
+
+.shape .shape5 {
+    left: 10em;
+    bottom: 100px;
+    width: 18em;
+    opacity: 0.5;
+    transform-origin: center;
+    animation: shape5 linear 5s infinite;
+    transform: translate(100, -1000px) rotate(0deg);
+}
+
+@keyframes shape5{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
