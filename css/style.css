@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 :root{
     --background-gray: #202225;
@@ -42,12 +42,15 @@ nav ul{
     justify-content: flex-end;
     height: 5em;
     padding-right: 30px;
+    box-shadow: 5px 0px 10px var(--purple);
+
  }
 
 nav ul li a{
     text-decoration: none;
     align-content: center;
     color: white;
+
 
 }
 
@@ -78,24 +81,20 @@ section{
 
 }
 
-.groupHome{
-    position: relative;
-}
-
 .nameHome{
-    font-family: 'Satisfy', cursive;
+    font-family: 'Kaushan Script', cursive;
     font-size: 8em;
 }
 
 .imageHome{
     max-width: 500px;
-    max-height: 500px;    
+    max-height: 700px;    
     width: auto;
     height: auto;
 
-    border-radius: 50% 20% / 10% 40%;
-    background-color: aqua;
+    border-radius: 10px 100px / 120px;
     margin: 50px;
+    box-shadow: 10px 10px 50px var(--purple);
     
 }
 
@@ -179,7 +178,29 @@ section{
     }
 }
 
-/* ------------------------------------------------------------------------------------ */
+/* ----------------------------------------- About ------------------------------------------- */
+
+.bodyAbout{
+    display: flex;
+}
+
+.imageAbout{
+    max-width: 400px;
+    max-height: 600px;    
+    width: auto;
+    height: auto;
+
+    border-radius: 10px 100px / 120px;
+    margin: 50px;
+    box-shadow: 10px 10px 50px var(--purple);
+}
+
+.textAbout{
+    text-align: left;
+    border: solid;
+    height: 80px;
+    width: 100px;
+}
 
 
 
