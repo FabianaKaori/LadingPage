@@ -64,12 +64,11 @@ nav ul li a:hover{
 /* ------------------------------------- Home ----------------------------------------------- */
 
 .bodyLading{
-    padding-top: 10em;
+    margin-top: 5%;
 }
 
 section{
-    min-height: 80vh;
-    margin: 0 2em;
+    height: 150%;
 
 }
 
